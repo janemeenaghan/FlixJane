@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:translationX="127dp">
+
+    <ImageView
+        android:id="@+id/ivPoster"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="0dp"
+        android:cropToPadding="false"
+        android:translationX="0dp"
+        android:visibility="visible"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ivPoster"
+        android:layout_marginLeft="-1dp"
+        android:layout_toRightOf="@id/ivPoster"
+        android:rotation="0"
+        android:text="TextView"
+        android:textSize="24sp"
+        android:translationX="0dp"
+        android:translationY="0dp"
+        android:translationZ="0dp" />
+
+    <TextView
+        android:id="@+id/invisibleHelperToGetFarLeft"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignTop="@id/ivPoster"
+        android:layout_marginLeft="-227dp"
+        android:layout_marginTop="-2dp"
+        android:layout_toRightOf="@id/ivPoster"
+        android:rotation="0"
+        android:text="TextView"
+        android:textSize="24sp"
+        android:translationX="0dp"
+        android:translationY="0dp"
+        android:translationZ="0dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tvOverview"
+        android:layout_width="152dp"
+        android:layout_height="84dp"
+        android:layout_below="@id/tvTitle"
+        android:layout_toRightOf="@id/ivPoster"
+        android:text="TextView"
+        android:textSize="8sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/invisibleHelperToGetFarLeft"
+        android:layout_alignParentStart="false"
+        android:adjustViewBounds="true"
+        android:visibility="visible"
+        tools:srcCompat="@tools:sample/avatars" />
+</RelativeLayout>
